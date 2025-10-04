@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Usuário - Libre Turing</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <a href="menu.html" class="back-link">← Voltar ao Menu</a>
+        <section id="consulta-usuario">
+            <h2>Consulta de Usuário</h2>
+            <p>Consulte os dados de um aluno pelo seu RA.</p>
+            
+            <form id="form-consulta" method="POST" novalidate>
+                <label for="consulta-ra-aluno">RA do Aluno:</label>
+                <input type="text" id="consulta-ra-aluno" name="consulta-ra-aluno" placeholder="Digite o RA do aluno" required>
+                <span class="error-message" id="ra-error"></span>
+
+                <div class="container-botoes">
+                    <button type="submit" id="btn-consultar" formaction="../consulta-aluno/resultado_consulta.php">Consultar Usuário</button>
+                    <button type="submit" id="btn-lista-completa" formaction="../consulta-aluno/lista_alunos.php" class="botao-secundario">Lista Completa de Alunos cadastrados</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="consulta_user_validation.js"></script>
+</body>
+</html>

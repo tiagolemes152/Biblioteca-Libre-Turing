@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livro - Libre Turing</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <a href="cadastro-livro.html" class="back-link">← Voltar</a>
+        <section id="cadastro-livro">
+            <h2>Cadastro de Livro</h2>
+            <p>Adicione um novo livro ao acervo da biblioteca.</p>
+            
+            <form id="form-cadastro" class="form-login" novalidate>
+                
+                <label for="nome-livro">Nome do Livro:</label>
+                <input type="text" id="nome-livro" name="nome-livro" placeholder="Digite o nome do livro" required>
+                <span class="error-message" id="nome-error"></span>
+
+                <label for="isbn-livro">ISBN do Livro</label>
+                <input type="text" id="isbn-livro" name="isbn-livro" placeholder="Digite apenas números para o ISBN">
+                 <span class="error-message" id="isbn-error"></span>
+
+                <label for="codigo-barras">Código de Barras do Livro</label>
+                <input type="text" id="codigo-barras" name="codigo-barras" placeholder="Informe o código de barras do livro" required>
+                 <span class="error-message" id="codigo-error"></span>
+
+                <label for="data-aquisicao">Data de aquisição do Livro</label>
+                <input type="date" id="data-aquisicao" name="data-aquisicao" required>
+                 <span class="error-message" id="data-error"></span>
+
+                <button type="submit">Cadastrar Livro</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="cad_acervo_validation.js"></script>
+</body>
+</html>

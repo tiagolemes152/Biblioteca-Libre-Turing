@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Livros - Libre Turing</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <a href="menu.html" class="back-link">← Voltar ao Menu</a>
+        <section id="consulta-livro">
+            <h2>Consulta de Livro</h2>
+            <p>Digite o nome do livro para realizar a consulta</p>
+            
+            <form method="POST">
+                <label for="consulta-livro">Nome do Livro:</label>
+                <input type="text" id="consulta-livro" name="consulta-livro" placeholder="Digite o nome do livro">
+
+                <div class="container-botoes">
+
+                <button type="submit" formaction="../consulta-livro/resultado_consulta.php">Consultar Livro</button>
+
+                <button type="submit" formaction="../consulta-livro/lista_completa.php" class="botao-secundario">Lista Completa de Livros Registrados</button>
+
+                </div>
+            </form>
+                
+        </section>
+    </div>
+</body>
+</html>
